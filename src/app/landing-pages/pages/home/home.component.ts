@@ -10,121 +10,118 @@ import AOS from "aos";
 export class HomeComponent {
 
   heroContent = {
-    title: "Innovons",
-    spanText: "Ensemble",
-    description: "Chez IT-Consulting Teleo, nous nous engageons à offrir des solutions technologiques adaptées aux besoins uniques de chaque client. Découvrez comment nous pouvons transformer votre entreprise.",
+    title: "Venez découvrir nos services",
+    spanText: "ETS VAN’S SERVICES",
+    description: "Chez ETS VAN’S SERVICES, nous proposons des solutions variées pour répondre à vos besoins. Nous nous engageons à offrir des produits et services de qualité pour améliorer votre quotidien.",
     buttonText: "En savoir plus",
     buttonLink: "about",
     backgroundImage: 'assets/img/bg12.avif'
   };
-  
+
   servicesContent = {
-    title: "Pourquoi choisir IT-Consulting Teleo ?",
-    description: "Nous accompagnons certains des projets les plus complexes dans les secteurs public et privé. Nous nous assurons que les défis d'aujourd'hui sont résolus et que demain est encore plus intelligent grâce à nos solutions technologiques avancées.",
+    title: "Pourquoi choisir ETS VAN’S SERVICES ?",
+    description: "Nous vous offrons une large gamme de produits et services, allant de la vente de pièces détachées à la vente de mèches, en passant par des matériaux électriques et des services de pressing de qualité.",
     services: [
       {
         id: 1,
-        icon: "assets/img/services/cloud_transformation.webp",
-        title: "Cloud computing",
-        description: "Nous facilitons la transition vers le cloud en traduisant les besoins technologiques en solutions adaptées.",
+        icon: "assets/img/services/vehicle_parts.jpg", // Icone pour pièces détachées
+        title: "Vente des pièces détachées et accessoires de véhicules",
+        description: "Nous vous proposons un large choix de pièces détachées et accessoires pour vos véhicules, garantissant qualité et performance pour votre automobile.",
         color: "blue",
         delay: 200
       },
       {
         id: 2,
-        icon: "assets/img/services/cyber_security.png",
-        title: "Cybersécurité",
-        description: "Nous protégeons vos données et vos systèmes en intégrant des solutions de sécurité résilientes dans chaque aspect de votre mission.",
+        icon: "assets/img/services/hair_weaves.jpg", // Icone pour les mèches
+        title: "Vente des mèches brésilienne et indiennes",
+        description: "Découvrez nos mèches brésiliennes et indiennes, réputées pour leur qualité et leur durabilité, pour sublimer vos cheveux avec élégance.",
         color: "dark-blue",
         delay: 300
       },
       {
         id: 3,
-        icon: "assets/img/services/network.png",
-        title: "Ingénierie Réseau",
-        description: "Nous concevons des réseaux fiables et sécurisés, essentiels pour le bon fonctionnement de votre entreprise.",
-        color: "blue",
+        icon: "assets/img/services/electric_materials.jpg", // Icone pour matériaux d'électricité
+        title: "Ventes des matériaux d’électricité",
+        description: "Nous vous fournissons des matériaux d'électricité de qualité pour vos installations domestiques et professionnelles.",
+        color: "dark-blue",
         delay: 400
       },
       {
         id: 4,
-        icon: "assets/img/services/training.png",
-        title: "Formation",
-        description: "Nos formations professionnelles transforment les ambitions en compétences opérationnelles.",
-        color: "dark-blue",
+        icon: "assets/img/services/pressing.jpg", // Icone pour Pressing
+        title: "Pressing",
+        description: "Nous offrons des services de pressing professionnels, assurant des vêtements impeccables et bien entretenus.",
+        color: "blue",
         delay: 500
-      },
-      {
-        id: 5,
-        icon: "assets/img/services/web-development.jpg",
-        title: "Développement Web",
-        description: "Nous créons des logiciels web variés et garantissons une expérience utilisateur optimale.",
-        color: "blue",
-        delay: 600
-      },
-      {
-        id: 6,
-        icon: "assets/img/services/application.jpg",
-        title: "Développement d'Applications",
-        description: "Nous offrons une gamme de services personnalisés pour le développement d'applications.",
-        color: "dark-blue",
-        delay: 700
-      },
-      {
-        id: 7,
-        icon: "assets/img/services/AI.jpg",
-        title: "Intelligence Artificielle",
-        description: "Nous proposons des services de conseil en IA et des solutions pour atteindre vos objectifs plus rapidement.",
-        color: "blue",
-        delay: 800
       }
     ]
   };
-  
+
   aboutContent = {
     title: "À propos de nous",
     description: [
-      { 
+      {
         text: `
-          IT-Consulting Teleo est une entreprise spécialisée dans la fourniture de solutions technologiques pour répondre à vos besoins spécifiques. Nous offrons des services variés, notamment le développement web, les services cloud, la cybersécurité, la gestion des projets informatiques, et plus encore.
+          ETS VAN’S SERVICES est une entreprise spécialisée dans le commerce général et les prestations de services. Nous offrons des produits de qualité et des services professionnels pour répondre à tous vos besoins.
         `
       },
-      { 
+      {
         text: `
-          Notre équipe dévouée travaille avec passion pour trouver les solutions les plus adaptées et garantir des résultats de haute qualité. Que vous ayez besoin d'une solution technologique simple ou d'un projet complexe, IT-Consulting Teleo dispose des compétences et de l'expérience nécessaires pour vous aider à réussir.
+          Que vous soyez à la recherche de pièces détachées pour votre véhicule, de mèches pour vos besoins de coiffure, de matériaux électriques ou de services de pressing, nous avons les solutions pour vous. Notre équipe travaille avec passion pour vous offrir des produits de qualité supérieure et des services personnalisés.
         `
       }
     ],
-    imageUrl: "assets/img/banners/banner-14.webp"
+    imageUrl: "assets/img/logo_van (2).png"
   };
-  
+
   testimonialsContent = {
     title: "Ce que disent nos clients !",
     description: "Nos clients satisfaits",
     testimonials: [
       {
         stars: 5,
-        comment: "IT-Consulting Teleo a transformé notre façon de travailler grâce à leur expertise en cybersécurité et en transformation cloud. Leur équipe est professionnelle et réactive.",
+        comment: "ETS VAN’S SERVICES a été d'une grande aide pour mon véhicule. Les pièces détachées sont de très bonne qualité et le service client est excellent.",
         imageUrl: "assets/img/testimonials/testimonials-1.jpg",
         name: "Jean Dupont",
-        position: "Directeur Technique"
+        position: "Client automobile"
       },
       {
         stars: 4,
-        comment: "Le développement web réalisé par IT-Consulting Teleo a dépassé nos attentes. Leur compréhension des besoins et leur approche innovante nous ont permis d'atteindre nos objectifs.",
-        imageUrl: "assets/img/testimonials/testimonials-5.jpg",
+        comment: "Les mèches brésiliennes que j'ai achetées sont incroyables ! Elles sont douces et faciles à poser. Je recommande fortement.",
+        imageUrl: "assets/img/testimonials/testimonials-2.jpg",
         name: "Marie Lefebvre",
-        position: "Responsable Marketing"
+        position: "Client beauté"
       },
       {
         stars: 5,
-        comment: "Les formations proposées par IT-Consulting Teleo sont excellentes. Elles ont permis à notre équipe de monter en compétence et d'améliorer notre gestion des projets informatiques.",
-        imageUrl: "assets/img/testimonials/testimonials-4.jpg",
+        comment: "Le service de pressing d'ETS VAN’S SERVICES est parfait. Mes vêtements ressortent impeccables et en parfait état à chaque fois.",
+        imageUrl: "assets/img/testimonials/testimonials-3.jpg",
         name: "Paul Martin",
-        position: "Chef de Projet"
+        position: "Client pressing"
+      },
+      {
+        stars: 5,
+        comment: "J'ai acheté des matériaux électriques chez ETS VAN’S SERVICES pour rénover mon installation domestique. Les produits sont fiables et l'assistance technique est de qualité.",
+        imageUrl: "assets/img/testimonials/testimonials-4.jpg",
+        name: "Sophie Durand",
+        position: "Client matériaux électriques"
+      },
+      {
+        stars: 5,
+        comment: "Les mèches indiennes que j'ai reçues sont magnifiques. Elles ajoutent du volume et de la brillance à mes cheveux. Très satisfait de mon achat !",
+        imageUrl: "assets/img/testimonials/testimonials-5.jpg",
+        name: "Clara Bernard",
+        position: "Client beauté"
+      },
+      {
+        stars: 4,
+        comment: "Le service après-vente pour les pièces détachées de mon véhicule était réactif et compétent. Je recommande vivement cette entreprise pour tous vos besoins automobiles.",
+        imageUrl: "assets/img/testimonials/testimonials-6.jpg",
+        name: "Marc Lefevre",
+        position: "Client automobile"
       }
     ]
-  };  
+  };
 
   constructor(public appMain: MainComponent) { }
 

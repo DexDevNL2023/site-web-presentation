@@ -10,281 +10,396 @@ import AOS from "aos";
 })
 export class WhatwedoComponent {
   heroContent = {
-    title: "Nos Services",
-    spanText: "de qualité",
-    description: "Découvrez comment nos services peuvent transformer votre entreprise. Nous nous engageons à fournir des solutions innovantes et adaptées à vos besoins spécifiques.",
-    buttonText: "En savoir plus",
+    title: "ETS VAN’S SERVICES",
+    spanText: "Des OFFRETS de qualité",
+    description: "ETS VAN’S SERVICES est une entreprise de commerce général et de prestations de services, proposant une large gamme de produits et services adaptés à vos besoins. Nous nous engageons à offrir des solutions de qualité et un service client irréprochable.",
+    buttonText: "Découvrir nos services",
     buttonLink: "/services",
     backgroundImage: ''
   };
 
   whatwedoContents = [
     {
-      id: 1,
-      title: "Que peut faire l'informatique en nuage pour vous ?",
-      description: [
-        {
-          text: `Nos services d'informatique en nuage aident les entreprises à passer sans heurts aux plateformes cloud, garantissant évolutivité et efficacité.`
-        },
-        {
-          text: `De la stratégie cloud au déploiement, nous personnalisons des solutions qui s'alignent sur vos objectifs commerciaux et vos besoins en matière de sécurité.`
-        }
-      ],
-      imageUrl: "assets/img/services/cloud_transformation.webp",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Nous exploitons des technologies cloud avancées pour améliorer la vitesse, la sécurité et l'efficacité de votre infrastructure.",
-          subSections: [
-            { imgSrc: "assets/img/services/cloud_architecture.webp", title: "Architecture Cloud", description: "Conception d'infrastructures cloud robustes et évolutives.", color: "blue" },
-            { imgSrc: "assets/img/services/cloud_automation.png", title: "Automatisation Cloud", description: "Automatisation des processus cloud pour améliorer l'efficacité.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Nos services cloud couvrent tout, de la stratégie initiale à la gestion et à l'optimisation continues.",
-          subSections: [
-            { imgSrc: "assets/img/services/cloud_migration.jpg", title: "Migration Cloud", description: "Migration transparente de données et d'applications vers le cloud.", color: "blue" },
-            { imgSrc: "assets/img/services/cloud_management.jpg", title: "Gestion du Cloud", description: "Gestion complète des environnements cloud.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Nous collaborons avec des fournisseurs de services cloud leaders pour offrir les meilleures solutions adaptées à vos besoins.",
-          subSections: [
-            { imgSrc: "assets/img/services/cloud_partners.webp", title: "Partenariats Cloud", description: "Exploiter les partenariats pour des solutions cloud améliorées.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 2,
-      title: "Comment protégeons-nous vos données avec la cybersécurité ?",
-      description: [
-        {
-          text: `Nos services de cybersécurité protègent votre entreprise avec des solutions de sécurité de pointe conçues pour se défendre contre les menaces évolutives.`
-        },
-        {
-          text: `Nous intégrons des mesures de sécurité dans tous les aspects de votre entreprise pour garantir une protection robuste.`
-        }
-      ],
-      imageUrl: "assets/img/services/cyber_security.png",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Nos technologies de sécurité protègent vos actifs numériques contre une variété de menaces.",
-          subSections: [
-            { imgSrc: "assets/img/services/security_architecture.png", title: "Architecture de Sécurité", description: "Conception de systèmes et de réseaux sécurisés.", color: "blue" },
-            { imgSrc: "assets/img/services/threat_detection.png", title: "Détection des Menaces", description: "Identifier et neutraliser rapidement les menaces.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Nous fournissons une gamme de services de cybersécurité pour protéger votre organisation à tous les niveaux.",
-          subSections: [
-            { imgSrc: "assets/img/services/incident_response.png", title: "Réponse aux Incidents", description: "Réponse rapide aux violations de sécurité.", color: "blue" },
-            { imgSrc: "assets/img/services/security_assessment.png", title: "Évaluation de la Sécurité", description: "Évaluation complète de la posture de sécurité.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Collaborer avec des fournisseurs de sécurité de premier plan pour renforcer vos défenses.",
-          subSections: [
-            { imgSrc: "assets/img/services/security_partners.png", title: "Partenaires de Sécurité", description: "Exploiter les partenariats pour des solutions de sécurité améliorées.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 3,
-      title: "Ingénierie le futur des solutions réseau",
-      description: [
-        {
-          text: `Nos services d'ingénierie réseau garantissent que votre entreprise dispose d'une infrastructure fiable et sécurisée qui soutient la croissance et l'innovation.`
-        },
-        {
-          text: `Nous concevons et mettons en œuvre des solutions réseau qui maximisent les performances et la disponibilité.`
-        }
-      ],
-      imageUrl: "assets/img/services/network.png",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Nous utilisons des technologies réseau de pointe pour offrir une connectivité fiable et sécurisée.",
-          subSections: [
-            { imgSrc: "assets/img/services/network_design.png", title: "Conception Réseau", description: "Création d'architectures réseau efficaces.", color: "blue" },
-            { imgSrc: "assets/img/services/network_security.png", title: "Sécurité Réseau", description: "Protéger les réseaux contre les accès non autorisés.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Nos services réseau englobent la conception, le déploiement et la gestion pour assurer des performances optimales.",
-          subSections: [
-            { imgSrc: "assets/img/services/network_management.png", title: "Gestion du Réseau", description: "Gestion et surveillance des performances du réseau.", color: "blue" },
-            { imgSrc: "assets/img/services/network_optimization.png", title: "Optimisation du Réseau", description: "Amélioration de l'efficacité et de la vitesse du réseau.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Nous collaborons avec des fournisseurs de technologie réseau de premier plan pour offrir les meilleures solutions.",
-          subSections: [
-            { imgSrc: "assets/img/services/network_partners.png", title: "Partenariats Réseau", description: "Établir des partenariats solides pour des solutions réseau supérieures.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 4,
-      title: "Transformez vos compétences avec nos programmes de formation",
-      description: [
-        {
-          text: `Nos services de formation sont conçus pour doter votre équipe des compétences dont elle a besoin pour exceller dans l'environnement concurrentiel d'aujourd'hui.`
-        },
-        {
-          text: `Nous proposons des programmes de formation sur mesure qui comblent le fossé entre les compétences actuelles et les besoins futurs.`
-        }
-      ],
-      imageUrl: "assets/img/services/training.png",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Nos programmes de formation couvrent un large éventail de sujets technologiques pour améliorer les capacités de votre équipe.",
-          subSections: [
-            { imgSrc: "assets/img/services/tech_training.png", title: "Formation Tech", description: "Formation à jour sur les dernières technologies.", color: "blue" },
-            { imgSrc: "assets/img/services/soft_skills.png", title: "Compétences Douces", description: "Développement de compétences interpersonnelles essentielles.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Nous proposons une suite complète de services de formation pour répondre aux besoins de votre organisation.",
-          subSections: [
-            { imgSrc: "assets/img/services/corporate_training.png", title: "Formation en Entreprise", description: "Formation sur mesure pour les équipes d'entreprise.", color: "blue" },
-            { imgSrc: "assets/img/services/individual_training.png", title: "Formation Individuelle", description: "Programmes de formation personnalisés pour les individus.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Collaborer avec des leaders de l'industrie pour offrir des solutions de formation à la pointe de la technologie.",
-          subSections: [
-            { imgSrc: "assets/img/services/training_partners.png", title: "Partenaires de Formation", description: "S'associer à des experts pour offrir une formation de premier ordre.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 5,
-      title: "Développement web adapté à votre entreprise",
-      description: [
-        {
-          text: `Nos services de développement web fournissent aux entreprises des solutions web innovantes et robustes qui améliorent l'expérience utilisateur et l'engagement.`
-        },
-        {
-          text: `Nous adaptons chaque projet pour répondre aux besoins uniques de nos clients, en assurant une fonctionnalité et une esthétique optimales.`
-        }
-      ],
-      imageUrl: "assets/img/services/web-development.jpg",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Utiliser les dernières technologies web pour construire des applications web performantes et sécurisées.",
-          subSections: [
-            { imgSrc: "assets/img/services/frontend_development.png", title: "Développement Frontend", description: "Création d'interfaces utilisateur engageantes.", color: "blue" },
-            { imgSrc: "assets/img/services/backend_development.png", title: "Développement Backend", description: "Construction de systèmes backend robustes.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Nos services de développement web englobent la conception, le développement et l'optimisation pour des performances maximales.",
-          subSections: [
-            { imgSrc: "assets/img/services/web_design.png", title: "Conception Web", description: "Création de designs web modernes et attrayants.", color: "blue" },
-            { imgSrc: "assets/img/services/ecommerce.png", title: "Microservices", description: "Développement des microservices performants.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Collaboration avec des leaders technologiques pour offrir des solutions web avancées.",
-          subSections: [
-            { imgSrc: "assets/img/services/web_partners.png", title: "Partenaires Web", description: "Travailler avec des partenaires de premier plan pour des solutions web de qualité.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 6,
-      title: "Développement d'Applications",
-      description: [
-        {
-          text: `Nous offrons une gamme complète de services personnalisés pour le développement d'applications, allant de la conception à la mise en œuvre et à la maintenance.`
-        },
-        {
-          text: `Nos solutions sont adaptées à vos besoins spécifiques pour garantir que vos applications répondent parfaitement à vos exigences et offrent une expérience utilisateur optimale.`
-        }
-      ],
-      imageUrl: "assets/img/services/application.jpg",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Utilisation des dernières technologies pour créer des applications innovantes et performantes.",
-          subSections: [
-            { imgSrc: "assets/img/services/mobile_development.png", title: "Développement Mobile", description: "Création d'applications mobiles pour iOS et Android.", color: "blue" },
-            { imgSrc: "assets/img/services/web_application.png", title: "Applications Web", description: "Développement d'applications web robustes et interactives.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Des services complets pour répondre à tous vos besoins en développement d'applications.",
-          subSections: [
-            { imgSrc: "assets/img/services/app_design.png", title: "Conception d'Applications", description: "Conception intuitive et élégante pour une expérience utilisateur optimale.", color: "blue" },
-            { imgSrc: "assets/img/services/app_maintenance.png", title: "Maintenance d'Applications", description: "Support et mise à jour continue pour garantir la performance de vos applications.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Nous collaborons avec des experts pour offrir des solutions d'application de premier ordre.",
-          subSections: [
-            { imgSrc: "assets/img/services/app_partners.png", title: "Partenariats en Développement", description: "Exploiter les partenariats pour des solutions d'application améliorées.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 7,
-      title: "Intelligence Artificielle",
-      description: [
-        {
-          text: `Nous proposons des services de conseil en intelligence artificielle (IA) pour vous aider à intégrer des solutions IA qui boostent l'efficacité et innovent vos processus métiers.`
-        },
-        {
-          text: `Nos services comprennent la mise en œuvre d'algorithmes d'apprentissage automatique, d'analytique avancée et d'autres technologies IA pour vous aider à atteindre vos objectifs plus rapidement.`
-        }
-      ],
-      imageUrl: "assets/img/services/AI.jpg",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Mise en œuvre des dernières avancées en intelligence artificielle pour transformer vos processus d'affaires.",
-          subSections: [
-            { imgSrc: "assets/img/services/machine_learning.png", title: "Apprentissage Automatique", description: "Développement de modèles d'apprentissage automatique personnalisés.", color: "blue" },
-            { imgSrc: "assets/img/services/natural_language_processing.png", title: "Traitement du Langage Naturel", description: "Solutions pour comprendre et traiter le langage humain.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Des solutions IA sur mesure pour répondre à vos besoins spécifiques.",
-          subSections: [
-            { imgSrc: "assets/img/services/ai_consulting.png", title: "Conseil en IA", description: "Conseil pour l'intégration et l'optimisation des technologies IA.", color: "blue" },
-            { imgSrc: "assets/img/services/ai_integration.png", title: "Intégration de l'IA", description: "Intégration des solutions IA dans vos systèmes existants.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Collaboration avec des leaders de l'industrie pour offrir des solutions IA de pointe.",
-          subSections: [
-            { imgSrc: "assets/img/services/ai_partners.png", title: "Partenariats en IA", description: "Partenariats avec des experts en IA pour des solutions innovantes.", color: "dark-blue" }
-          ]
-        }
-      ]
-    }
+        id: 1,
+        title: "🚗 Vente des pièces détachées et accessoires de véhicules",
+        description: [
+          {
+            text: "🔧 Nous vous proposons un large choix de pièces détachées et accessoires pour vos véhicules, garantissant qualité et performance pour votre automobile 🏎️💨"
+          }
+        ],
+        imageUrl: "assets/img/services/vehicle_parts.jpg",
+        sections: [
+          {
+            title: "⚙️ Pièces Moteur",
+            description: "🔩 Des pièces de moteur adaptées à tous les types de véhicules, avec des prix compétitifs et des réductions 💰 sur les achats en gros.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "💦 Pompe à Eau",
+                description: "Pompe à eau compatible avec tous types de moteurs; 💵 Prix : **32 500 FCFA**; Réduction de **10%** sur commande groupée 🔥",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "⛓️ Courroie de Distribution",
+                description: "Courroie de distribution haute qualité pour assurer la longévité de votre moteur; 💵 Prix : **22 750 FCFA**; Réduction de **5%** pour les achats en gros ✅",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🔥 Bougies d’Allumage",
+                description: "Bougies haute performance pour une meilleure combustion; 💵 Prix : **9 750 FCFA**; Réduction de **10%** à partir de 4 bougies 🚗💨",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🛢️ Filtre à Huile",
+                description: "Filtre à huile de haute qualité pour moteur essence et diesel; 💵 Prix : **13 000 FCFA**; Remise de **5%** dès 3 unités achetées 🚛",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "🛠️ Accessoires Divers",
+            description: "🛒 Une sélection d’accessoires comme des batteries, des pneus et bien plus encore pour améliorer votre confort de conduite.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🔋 Batteries",
+                description: "Batteries haute performance pour tous véhicules; 💵 Prix : **78 000 FCFA**; Garantie **2 ans** ⚡🔌",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🚗 Pneus",
+                description: "Pneus résistants à toutes conditions météorologiques; 💵 Prix : **45 500 FCFA**; Réduction de **15%** pour un lot de **4 pneus** 🏁",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🚿 Balais d’Essuie-Glace",
+                description: "Essuie-glaces résistants aux intempéries 🌧️; 💵 Prix : **16 250 FCFA**; Réduction de **10%** pour **2 paires** 👀",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🛋️ Tapis de Voiture",
+                description: "Tapis antidérapants et résistants; 💵 Prix : **26 000 FCFA**; Réduction de **5%** sur un **set complet** 🏎️💨",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "🚦 Pièces de Freinage",
+            description: "🛑 Systèmes de freinage de haute qualité pour garantir **votre sécurité** sur la route.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🔴 Plaquettes de Frein",
+                description: "Plaquettes haute performance pour un freinage optimal; 💵 Prix : **39 000 FCFA**; Réduction de **10%** à partir de **2 jeux** ✅",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🛠️ Disques de Frein",
+                description: "Disques en acier robuste pour une durabilité maximale; 💵 Prix : **52 000 FCFA**; Réduction de **5%** pour **2 unités** 🚗",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🛢️ Liquide de Frein",
+                description: "Liquide de frein DOT 4 haute performance; 💵 Prix : **9 750 FCFA**; Réduction de **5%** sur **3 bouteilles** 🏁",
+                color: "dark-blue"
+              }
+            ]
+          },
+          {
+            title: "💡 Éclairage & Signalisation",
+            description: "🌟 Équipements pour **améliorer la visibilité** et la signalisation de votre véhicule de jour comme de nuit.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🔆 Ampoules LED",
+                description: "Ampoules LED ultra-lumineuses pour phares et feux arrière; 💵 Prix : **19 500 FCFA**; Réduction de **10%** pour **2 paires** 🌙",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🌫️ Feux de Brouillard",
+                description: "Feux de brouillard puissants pour une meilleure visibilité; 💵 Prix : **32 500 FCFA**; Réduction de **5%** pour **2 unités** 🚗",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/vehicle_parts.jpg",
+                title: "🪞 Rétroviseurs LED",
+                description: "Rétroviseurs équipés de LED pour une signalisation optimale; 💵 Prix : **45 500 FCFA**; Réduction de **10%** pour un **lot de 2** 🔦",
+                color: "dark-blue"
+              }
+            ]
+          }
+        ]
+      }
+      ,
+      {
+        id: 2,
+        title: "✨ Vente des Mèches Brésiliennes et Indiennes ✨",
+        description: [
+          {
+            "text": "💇‍♀️ Sublimez votre coiffure avec nos mèches brésiliennes et indiennes haut de gamme ! Douces, soyeuses et ultra-résistantes, elles s’adaptent à toutes vos envies 💖."
+          }
+        ],
+        imageUrl: "assets/img/services/hair_weaves.jpg",
+        sections: [
+          {
+            title: "💎 Mèches Brésiliennes - Luxe & Volume",
+            description: "Optez pour la perfection avec nos mèches brésiliennes de qualité premium, durables et faciles à coiffer ! ✨",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "🌟 Mèches Lisses",
+                description: "Ultra naturelles et brillantes, parfaites pour un look chic ! Prix : 65 000 FCFA; 🔥 Promo : -10% dès 3 paquets !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "💃 Mèches Bouclées",
+                description: "Donnez du volume à votre coiffure avec nos mèches bouclées ! Prix : 78 000 FCFA; 🎉 Promo : -15% dès 5 paquets !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "🌊 Mèches Ondulées",
+                description: "Des ondulations sublimes pour un effet glamour assuré ! Prix : 72 000 FCFA; ⭐ Promo : -10% dès 4 paquets !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "🔥 Mèches Frisées",
+                description: "Volume & définition pour une coiffure audacieuse ! Prix : 85 000 FCFA; ✨ Promo : -5% dès 3 paquets !",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "🌿 Mèches Indiennes - Douceur & Élégance",
+            description: "Découvrez nos mèches indiennes 100% naturelles, légères et soyeuses pour un effet irrésistible ! 💕",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "🖤 Mèches Lisses",
+                description: "Sublimez votre look avec ces mèches ultra-brillantes ! Prix : 58 000 FCFA; 💝 Promo : -5% dès 2 paquets !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "💫 Mèches Ondulées",
+                description: "Un effet wavy naturel et chic ! Prix : 72 000 FCFA; 🎁 Promo : -10% dès 3 paquets !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "🔥 Mèches Frisées",
+                description: "Idéal pour un volume XXL et une tenue longue durée ! Prix : 75 000 FCFA; 🛍️ Promo : -10% dès 5 paquets !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/hair_weaves.jpg",
+                title: "✨ Mèches Texturées",
+                description: "Un look unique et naturel garanti ! Prix : 65 000 FCFA; 🎊 Promo : -5% dès 4 paquets !",
+                color: "blue"
+              }
+            ]
+          }
+        ]
+      }
+      ,
+      {
+        id: 3,
+        title: "⚡ Vente des matériaux d’électricité",
+        description: [
+          {
+            "text": "🔌 Nous vous fournissons des matériaux d'électricité de qualité pour vos installations domestiques et professionnelles."
+          }
+        ],
+        imageUrl: "assets/img/services/electric_materials.jpg",
+        sections: [
+          {
+            title: "⚡ Câbles et Fils",
+            description: "🛠️ Câbles et fils électriques pour tous vos projets d'installation, avec des prix attractifs.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🔋 Câbles à Haute Tension",
+                description: "Câbles pour installations à haute tension; 💰 Prix : 130 000 FCFA/mètre; ⚡ Réduction de 10% sur commandes de plus de 100 mètres !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🧵 Fils Conducteurs",
+                description: "Fils conducteurs pour installations électriques diverses; 💰 Prix : 19 500 FCFA/mètre; 📢 Promo : 5% de remise sur les achats en gros !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🌐 Câbles Réseaux",
+                description: "Câbles de communication pour réseaux informatiques et téléphoniques; 💰 Prix : 29 250 FCFA/mètre; 🎁 Offre spéciale sur commandes de plus de 50 mètres !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🛡️ Câbles Blindés",
+                description: "Câbles blindés pour installations en extérieur ou dans des environnements sensibles; 💰 Prix : 48 750 FCFA/mètre; 🔥 Haute durabilité garantie !",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "🔌 Appareils Électriques",
+            description: "🛠️ Commutateurs, prises, disjoncteurs et autres appareils électriques pour une installation sécurisée et efficace.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🎛️ Commutateurs",
+                description: "Commutateurs de haute qualité pour diverses applications; 💰 Prix : 9 750 FCFA; 🛍️ Remise de 5% sur achats multiples !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🔌 Prises et Disjoncteurs",
+                description: "Prises et disjoncteurs pour installations domestiques et professionnelles; 💰 Prix : 32 500 FCFA; 🔥 Réduction de 10% pour commandes de plus de 10 unités !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "⚙️ Interrupteurs Automatiques",
+                description: "Interrupteurs automatiques pour une gestion efficace de l'électricité; 💰 Prix : 26 000 FCFA; 🎯 Promo : 8% de réduction sur achats en gros !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "📦 Tableaux Électriques",
+                description: "Tableaux électriques pour la distribution de l’électricité dans les maisons et bureaux; 💰 Prix : 78 000 FCFA; 🛒 10% de remise pour achats en quantité !",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "💡 Éclairage",
+            description: "🔆 Une large gamme d’équipements d’éclairage pour sublimer vos espaces !",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "💡 Ampoules LED",
+                description: "Ampoules LED pour une consommation d'énergie réduite et une longue durée de vie; 💰 Prix : 5 200 FCFA; 🏷️ 5% de réduction dès 5 pièces achetées !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🪟 Plafonniers",
+                description: "Plafonniers modernes et élégants pour votre salon ou bureau; 💰 Prix : 32 500 FCFA; 🎁 Offre spéciale sur certains modèles !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🔦 Projecteurs LED",
+                description: "Projecteurs LED pour éclairage extérieur, parfaits pour jardins ou parkings; 💰 Prix : 48 750 FCFA; ✨ Réduction de 10% pour plus de 5 unités achetées !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "☀️ Lampes Solaires",
+                description: "Lampes solaires pour un éclairage écologique et économique; 💰 Prix : 16 250 FCFA; 🌞 Réduction de 5% pour commandes de 3 pièces et plus !",
+                color: "blue"
+              }
+            ]
+          },
+          {
+            title: "🏠 Matériel pour Installations Domestiques",
+            description: "📌 Tout le nécessaire pour sécuriser vos installations électriques domestiques et professionnelles.",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🔌 Prises Murales",
+                description: "Prises murales adaptées aux normes de sécurité; 💰 Prix : 6 500 FCFA; 🎯 Remise de 5% pour les achats multiples !",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🔘 Interrupteurs Muraux",
+                description: "Interrupteurs de haute qualité avec un design moderne; 💰 Prix : 13 000 FCFA; 🏷️ Remise spéciale sur commandes en gros !",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/electric_materials.jpg",
+                title: "🛡️ Boîtiers de Protection",
+                description: "Boîtiers de protection pour sécuriser vos installations électriques; 💰 Prix : 19 500 FCFA; 🎯 Réduction de 10% sur commandes de plus de 15 unités !",
+                color: "dark-blue"
+              }
+            ]
+          }
+        ]
+      }
+      ,
+      {
+        id: 4,
+        title: "Pressing 🧺✨",
+        description: [
+          {
+            "text": "Nous offrons des services de pressing professionnels 🔥, garantissant des vêtements toujours impeccables et bien entretenus ! 🏆👕"
+          }
+        ],
+        imageUrl: "assets/img/services/pressing.jpg",
+        sections: [
+          {
+            title: "Services de Pressing 🚿🧼",
+            description: "Nos services de pressing sont adaptés à tous types de vêtements, vous garantissant une propreté parfaite et un soin exceptionnel ! 🌟",
+            subSections: [
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Pressing Classique 🏠👚",
+                description: "Un nettoyage professionnel pour tous vos vêtements à partir de **2 500 FCFA**; 🏷️ **Réduction de 10%** à partir de 10 articles ! 🛍️",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Nettoyage à Sec 🌿🧴",
+                description: "Traitement sans eau pour préserver la qualité de vos tissus délicats; Prix : **5 000 FCFA** par pièce; 🎁 **Offre spéciale : 4 articles nettoyés, le 5ème offert !** 🎊",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Repassage 🔥👔",
+                description: "Un repassage soigné pour un look toujours impeccable ! **1 500 FCFA** par pièce; **Réduction de 20%** pour plus de 5 articles 🏆💨",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Nettoyage de Tapis 🏡🧹",
+                description: "Nettoyage en profondeur et désinfection de vos tapis dès **10 000 FCFA**; **Remise de 15%** pour plus de 3 tapis ! ✨🛋️",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Traitement des Peaux et Cuirs 👜👞",
+                description: "Entretien de luxe pour vos vestes, sacs et chaussures en cuir **8 000 FCFA** par article; **Réduction de 5%** à partir de 3 pièces ! 🥇🎩",
+                color: "blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Service Express ⚡⏳",
+                description: "Besoin d’un nettoyage rapide ? Nous traitons vos vêtements en **24h**; Tarif : **3 500 FCFA** par article 🚀✨",
+                color: "dark-blue"
+              },
+              {
+                imgSrc: "assets/img/services/pressing.jpg",
+                title: "Nettoyage de Couvertures et Rideaux 🛏️🪟",
+                description: "Redonnez un coup de neuf à vos couvertures et rideaux dès **7 500 FCFA**; **Réduction de 10%** pour plus de 2 articles ! 🌿💦",
+                color: "blue"
+              }
+            ]
+          }
+        ]
+      }
   ];
 
   whatwedoContent: any; // This will hold the specific content to display
@@ -298,25 +413,16 @@ export class WhatwedoComponent {
         this.whatwedoId = +params.get("id");
         switch (this.whatwedoId) {
           case 1:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-cloud.webp';
+            this.heroContent.backgroundImage = 'assets/img/services/vehicle_parts.jpg';
             break;
           case 2:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-secure.jpg';
+            this.heroContent.backgroundImage = 'assets/img/services/hair_weaves.jpg';
             break;
           case 3:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-training.jpg';
+            this.heroContent.backgroundImage = 'assets/img/services/electric_materials.jpg';
             break;
           case 4:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-networks.jpg';
-            break;
-          case 5:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-web.jpg';
-            break;
-          case 6:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-mobile.jpg';
-            break;
-          case 7:
-            this.heroContent.backgroundImage = 'assets/img/banners/banner-iai.jpg';
+            this.heroContent.backgroundImage = 'assets/img/services/pressing.jpg';
             break;
           default:
             this.heroContent.backgroundImage = '';
@@ -325,15 +431,28 @@ export class WhatwedoComponent {
         this.loadWhatwedos();
     });
   }
- 
+
   loadWhatwedos() {
     // Trouver le contenu basé sur l'id
     this.whatwedoContent = this.whatwedoContents.find(content => content.id === this.whatwedoId);
-    
+
     // Assurez-vous que whatwedoContent est défini
     if (!this.whatwedoContent) {
       console.error("Content not found for id:", this.whatwedoId);
     }
     console.log(this.whatwedoContent);
+  }
+
+  formatDescription(description: string): string {
+    // Séparation de la description par ';' et création d'une liste
+    const descriptionList = description.split(';').map(item => {
+      item = item.trim();
+      return `<li>${item}</li>`;
+    }).join('');
+
+    // Gestion des emojis en capturant tout emoji dans le texte
+    return `<ul>${descriptionList}</ul>`
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Met en gras les valeurs entre ** **
+      .replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{2300}-\u{23FF}]/gu, match => `<span class="emoji">${match}</span>`); // Gestion de tous les emojis
   }
 }

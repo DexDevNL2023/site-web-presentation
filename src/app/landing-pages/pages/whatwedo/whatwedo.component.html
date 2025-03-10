@@ -22,7 +22,7 @@
                     <img [src]="whatwedoContent.imageUrl" class="img-fluid" alt="">
                 </div>
             </div>
-        </div> 
+        </div>
     </section><!-- End About Section -->
 
     <!-- ======= Start Section ======= -->
@@ -46,7 +46,8 @@
                     <div class="service-box  {{ subSection.color }}">
                         <div><img [src]="subSection.imgSrc" alt="" class="service-icon"></div>
                         <h3>{{ subSection.title }}</h3>
-                        <p>{{ subSection.description }}</p>
+                        <!-- Utilisation de innerHTML pour interpréter le HTML -->
+                        <p [innerHTML]="formatDescription(subSection.description)"></p>
                     </div>
                 </div>
             </div>

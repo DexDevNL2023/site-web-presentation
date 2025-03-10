@@ -12,7 +12,7 @@ export class CareerComponent {
   heroContent = {
     title: "Rejoignez",
     spanText: "notre équipe",
-    description: "Découvrez les opportunités de carrière chez IT-Consulting Teleo. Nous sommes à la recherche de talents passionnés pour nous aider à transformer le futur de la technologie. Explorez nos offres d'emploi et postulez pour rejoindre notre équipe innovante.",
+    description: "Découvrez les opportunités de carrière chez ETS VAN’S SERVICES. Nous sommes à la recherche de talents passionnés pour nous aider à transformer le futur de la technologie. Explorez nos offres d'emploi et postulez pour rejoindre notre équipe innovante.",
     buttonText: "Voir les Offres",
     buttonLink: "careers",
     backgroundImage: 'assets/img/banners/banner-carrer.jpg'
@@ -45,7 +45,7 @@ export class CareerComponent {
     },
     {
       title: "Ingénieur en Sécurité Cybernétique",
-      description: "IT-Consulting Teleo recherche un Ingénieur en Sécurité Cybernétique (Support à l'Infrastructure de Défense Cybernétique) pour notre site client à Washington, DC.",
+      description: "ETS VAN’S SERVICES recherche un Ingénieur en Sécurité Cybernétique (Support à l'Infrastructure de Défense Cybernétique) pour notre site client à Washington, DC.",
       location: "Washington, DC",
       responsibilities: [
         "Concevoir, développer, intégrer, mettre en œuvre, exploiter et analyser des technologies de sécurité cybernétique.",

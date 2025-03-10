@@ -10,28 +10,37 @@ import AOS from "aos";
 })
 export class AboutComponent {
 
-  heroContent = { 
+  heroContent = {
     title: "À propos",
     spanText: "de nous",
-    backgroundImage: 'assets/img/banners/banner-about.jpg'
+    backgroundImage: 'assets/img/bg_pressing.jpg'
   };
-  
+
   aboutContent: { title: string, description: { text: string }[], imageUrl: string } = {
-    title: "Notre vision",
+    title: "Qui sommes-nous ?",
     description: [
-      { 
-        text: `IT-Consulting Teleo est une entreprise camerounaise basée dans plusieurs Pays dans le monde, spécialisée dans la fourniture de solutions technologiques innovantes pour aider nos clients à atteindre leurs objectifs. Nous sommes fiers de nos racines et de notre engagement à offrir des services de haute qualité adaptés aux besoins uniques de chaque client.`
+      {
+        text: `ETS VAN’S SERVICES, votre partenaire de confiance, vous propose une gamme variée de produits et services de qualité pour répondre à tous vos besoins :`
       },
-      { 
-        text: `Notre expertise couvre plusieurs domaines essentiels : développement web, services cloud, réseaux et sécurité, ainsi que la gestion de projets informatiques. Que vous soyez une petite entreprise cherchant à établir votre présence en ligne ou une grande organisation nécessitant une infrastructure cloud sécurisée, nous avons les compétences et l'expérience nécessaires pour vous accompagner.`
+      {
+        text: `✅ Vente de pièces détachées et accessoires pour véhicules – Des produits fiables et performants pour assurer la longévité et la sécurité de votre automobile.`
       },
-      { 
-        text: `Chez IT-Consulting Teleo, nous nous efforçons de rester à la pointe de la technologie pour offrir des solutions durables et innovantes. Notre équipe dévouée travaille main dans la main avec vous pour s'assurer que chaque projet est mené à bien, dans le respect des délais et du budget.`
+      {
+        text: `✅ Vente de mèches brésiliennes et indiennes – Des mèches 100% naturelles, de haute qualité, pour une chevelure sublime et soignée.`
+      },
+      {
+        text: `✅ Vente de matériaux d’électricité – Un large choix de produits électriques adaptés aux professionnels et aux particuliers, garantissant sécurité et efficacité.`
+      },
+      {
+        text: `✅ Service de pressing – Un nettoyage soigné et professionnel pour vos vêtements et textiles, avec des produits respectueux des fibres et de l’environnement.`
+      },
+      {
+        text: `📍Avec ETS VAN’S SERVICES, bénéficiez d’un service client à l’écoute et de produits sélectionnés avec soin pour vous offrir le meilleur.`
       }
     ],
-    imageUrl: "assets/img/banners/banner-14.webp"
+    imageUrl: "assets/img/logo_van (2).png"
   };
-  
+
   aboutId: string | null = null;
 
   constructor(public appMain: MainComponent, private route: ActivatedRoute) { }

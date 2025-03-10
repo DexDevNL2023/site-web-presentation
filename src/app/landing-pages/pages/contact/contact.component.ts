@@ -15,29 +15,35 @@ export class ContactComponent {
     title: "Nous sommes là",
     spanText: "pour vous aider",
     description: "Vous avez des questions ou besoin d'assistance ? N'hésitez pas à nous contacter pour obtenir des réponses rapides et précises. Nous sommes à votre écoute pour vous offrir le meilleur service possible.",
-    buttonText: "IT-Consulting Teleo",
+    buttonText: "ETS VAN’S SERVICES",
     buttonLink: "",
     backgroundImage: 'assets/img/banners/banner-contact.jpg'
   };
-  
+
   contactContent = {
     title: "Prenez Contact",
     description: "Nous serions ravis de répondre à toutes vos questions et de discuter de vos besoins. Voici comment vous pouvez nous joindre :",
-    contacts: [
-      { 
-        icon: "pi pi-map-marker", 
-        label: "Adresse", 
-        info: "Omnisport, Yaoundé - Cameroun" 
+    headquarters: {
+      label: "Siège Social",
+      address: "Ndokoti, Douala - Cameroun",
+      phone: "+237 690624449 / +237 653383054",
+      email: "ovanluv@yahoo.fr"
+    },
+    shops: [
+      {
+        name: "Boutique Pièces Détachées",
+        address: "Obala, sis garage Ongono",
+        phone: "+237 6 40 25 80 44"
       },
-      { 
-        icon: "pi pi-phone", 
-        label: "Appelez-Nous", 
-        info: "+237 674 746 071 / 656 668 310" 
+      {
+        name: "Boutique Alimentation",
+        address: "Nkolguem, lieu dit face prévention routière",
+        phone: "+237 6 90 64 69 86"
       },
-      { 
-        icon: "pi pi-envelope", 
-        label: "Envoyez-Nous un Email", 
-        info: "iteleo@gmail.com" 
+      {
+        name: "Pressing",
+        address: "Newbell, Terminus Saint-Michel",
+        phone: "+237 6 90 59 36 43"
       }
     ]
   };
@@ -55,26 +61,6 @@ export class ContactComponent {
     AOS.init();
   }
 
-  /* sendMessage() {
-    // Envoyer l'email au service commercial
-    this.emailService.sendEmail(this.firstname, this.lastname, this.email, this.phone, this.message)
-      .then(() => {
-        this.messageService.add({
-          severity: 'success',
-          summary: 'Succès',
-          detail: 'Votre message a été transmis au service commercial.'
-        });
-      })
-      .catch((error) => {
-        console.error('Erreur EmailJS :', error);
-        this.messageService.add({
-          severity: 'error',
-          summary: 'Erreur',
-          detail: 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer ultérieurement.'
-        });
-      });
-    }   */
-
     sendMessage() {
       // Envoyer l'email au service commercial
       this.messageService.add({
@@ -83,5 +69,5 @@ export class ContactComponent {
         detail: 'Votre message a été transmis au service commercial.'
       });
       console.log("okay");
-    }      
+    }
 }

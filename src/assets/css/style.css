@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #00BFF0;
+  color: #E6C200;
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #00BFF0;
+  color: #E6C200;
   text-transform: uppercase;
 }
 
@@ -57,7 +57,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #002430;
+  color: #046A38;
 }
 
 @media (max-width: 768px) {
@@ -77,7 +77,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #00BFF0;
+  background: #E6C200;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -118,9 +118,9 @@ section {
 }
 
 .header.header-scrolled {
-  background: #002430;
+  background: #046A38;
   padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3);
 }
 
 .header .logo {
@@ -136,7 +136,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -179,12 +179,12 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #00BFF0;
+  background: #E6C200;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -194,7 +194,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: #E6C200;
 }
 
 .navbar .dropdown ul {
@@ -207,8 +207,8 @@ section {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #002430;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #046A38;
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -231,7 +231,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .navbar .dropdown:hover>ul {
@@ -263,7 +263,7 @@ section {
 .navbar .megamenu ul li a:hover,
 .navbar .megamenu ul li .active,
 .navbar .megamenu ul li .active:hover {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -290,10 +290,10 @@ section {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #00BFF0;
+  color: #E6C200;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -322,7 +322,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #002430;
+  background: #046A38;
   transition: 0.3s;
   z-index: 1000;
 }
@@ -349,7 +349,6 @@ section {
 }
 
 .navbar-mobile .dropdown-active {
-  /* Enlever l'ombre ou toute autre bordure */
   box-shadow: none;
   border: none;
 }
@@ -358,13 +357,13 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #002430;
+  color: #046A38;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .navbar-mobile .getstarted,
@@ -381,7 +380,7 @@ section {
   opacity: 1;
   visibility: visible;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -399,7 +398,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -410,10 +409,14 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  height: 100vh;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(39, 39, 39, 0.1)), url(../layout/images/landing/banner5.jpg) top center no-repeat;*/
-  background-size: cover;
+    width: 100%;
+    height: 100vh; /* Assurez-vous que la hauteur est de 100% de la fenêtre */
+    background-size: cover; /* S'assurer que l'image couvre toute la section */
+    background-position: center center; /* Centrer l'image de fond */
+    background-attachment: fixed; /* Garder l'image en place lorsque vous faites défiler */
+    display: flex; /* Utilisation de flexbox pour aligner le contenu au centre */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
 }
 
 .hero h1 {
@@ -437,8 +440,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #00BFF0;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  background: #E6C200;
+  box-shadow: 0px 5px 25px rgba(230, 194, 0, 0.3);
 }
 
 .hero .btn-get-started span {
@@ -472,6 +475,7 @@ section {
   .hero {
     height: auto;
     padding: 120px 0 60px 0;
+    background-attachment: scroll; /* Désactive le fond fixe sur les petits écrans */
   }
 
   .hero .hero-img {
@@ -598,7 +602,7 @@ section {
 }
 
 .text-moving {
-  border: 3px solid #002430;
+  border: 3px solid #046A38;
   background: #00243088;
   display: inline-block;
   vertical-align: top;
@@ -614,7 +618,7 @@ section {
   content: "";
   width: 18px;
   height: 18px;
-  background: #00BFF0;
+  background: #E6C200;
   position: absolute;
   top: -8px;
   left: -8px;
@@ -623,7 +627,7 @@ section {
   content: "";
   width: 13px;
   height: 13px;
-  background: #00BFF0;
+  background: #E6C200;
   position: absolute;
   bottom: -7px;
   right: -7px;
@@ -634,9 +638,13 @@ section {
 --------------------------------------------------------------*/
 .hero-sub {
   width: 100%;
-  height: 70vh; 
-  /*background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 187, 255, 0.2)), url(../layout/images/landing/banner5.jpg) center center no-repeat; */
-  background-size: cover;
+  height: 70vh;
+  background-size: cover; /* S'assurer que l'image couvre toute la section */
+  background-position: center center; /* Centrer l'image de fond */
+  background-attachment: fixed; /* Garder l'image en place lorsque vous faites défiler */
+  display: flex; /* Utilisation de flexbox pour aligner le contenu au centre */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
   border-bottom-left-radius: 2% 2%;
   border-bottom-right-radius: 2% 2%;
 }
@@ -648,10 +656,12 @@ section {
 }
 
 @media (max-width: 991px) {
-  .hero-sub {
-    height: auto;
-    padding: 120px 0 60px 0;
-  }
+    .hero-sub {
+        height: auto;
+        padding: 120px 0 60px 0;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 
 }
 
@@ -673,20 +683,20 @@ section {
   padding: 40px;
 }
 .about img{
-  border-bottom: 22px solid #00BFF0;
-  border-top: 22px solid #00BFF0;
+  border-bottom: 22px solid #E6C200;
+  border-top: 22px solid #E6C200;
 }
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #00BFF0;
+  color: #E6C200;
   text-transform: uppercase;
 }
 
 .about h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #002430;
+  color: #046A38;
 }
 
 .about p {
@@ -700,8 +710,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #00BFF0;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  background: #E6C200;
+  box-shadow: 0px 5px 25px rgba(230, 194, 0, 0.3);
 }
 .btn-read-more:hover {
   line-height: 0;
@@ -709,8 +719,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #002430;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+  background: #046A38;
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3);
 }
 .btn-read-more span {
   font-family: "Nunito", sans-serif;
@@ -734,7 +744,7 @@ section {
 --------------------------------------------------------------*/
 .values .box {
   padding: 30px;
-  box-shadow: 0px 0 15px rgba(8, 160, 255, 0.4) inset;
+  box-shadow: 0px 5px 25px rgba(230, 194, 0, 0.3) inset;
   text-align: center;
   transition: 0.3s;
   height: 100%;
@@ -818,28 +828,28 @@ section {
   border-radius: 12px;
 }
 .services .service-box.blue {
-  border-bottom: 3px solid #00BFF0;
+  border-bottom: 3px solid #E6C200;
 }
 
 
 .services .service-box.blue .read-more {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .services .service-box.blue:hover {
-  background: #00BFF0;
+  background: #E6C200;
 }
 
 .services .service-box.dark-blue {
-  border-bottom: 3px solid #002430;
+  border-bottom: 3px solid #046A38;
 }
 
 .services .service-box.dark-blue .read-more {
-  color: #002430;
+  color: #046A38;
 }
 
 .services .service-box.dark-blue:hover {
-  background: #002430;
+  background: #046A38;
 }
 
 
@@ -876,7 +886,7 @@ section {
 
 .faq .accordion-button:not(.collapsed) {
   background: none;
-  color: #00BFF0;
+  color: #E6C200;
   border-bottom: 0;
 }
 
@@ -893,7 +903,7 @@ section {
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3);
   background: #fff;
   min-height: 320px;
   display: flex;
@@ -946,11 +956,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #00BFF0;
+  border: 1px solid #E6C200;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00BFF0;
+  background-color: #E6C200;
 }
 
 .testimonials .swiper-slide {
@@ -996,11 +1006,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #00BFF0;
+  border: 1px solid #E6C200;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00BFF0;
+  background-color: #E6C200;
 }
 
 
@@ -1009,8 +1019,8 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #ffffff;
-  background: #002430;
-  box-shadow: 0px 0 15px rgba(8, 160, 255, 0.4) inset;
+  background: #046A38;
+  box-shadow: 0px 5px 25px rgba(4, 106, 56, 0.3) inset;
   padding: 30px;
   min-height: 200px;
 }
@@ -1018,7 +1028,7 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .contact .info-box h3 {
@@ -1039,14 +1049,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #002430;
+  background: #046A38;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
 
 .footer .footer-newsletter {
   padding: 50px 0;
-  background: #002430;
+  background: #046A38;
   border-top: 1px solid #e1ecff;
 }
 
@@ -1063,7 +1073,7 @@ section {
   font-size: 20px;
 }
 .footer .footer-top {
-  background: #002430;
+  background: #046A38;
   background-size: contain;
   border-top: 1px solid #e1ecff37;
   border-bottom: 1px solid #e1ecff;
@@ -1142,7 +1152,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #00BFF0;
+  color: #E6C200;
 }
 
 .footer .footer-top .footer-contact p {
@@ -1155,3 +1165,30 @@ section {
   padding-top: 30px;
   color: #fff;
 }
+
+.img-fluid {
+  width: 100%;
+  height: auto; /* Conserve le ratio de l'image */
+}
+
+/* Appliquer une personnalisation uniquement aux descriptions dans les subSections */
+.service-box ul {
+    list-style-type: none; /* Supprimer les puces par défaut */
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .service-box li {
+    margin-bottom: 8px; /* Espacement entre les éléments */
+    font-size: 1rem; /* Taille de la police pour la description */
+    line-height: 1.5; /* Espacement de ligne pour rendre le texte plus lisible */
+    display: flex; /* Utilisation de flexbox pour aligner verticalement le texte et l'emoji */
+    align-items: center; /* Centrer verticalement les éléments */
+  }
+
+  .service-box .emoji {
+    font-size: 1.2em; /* Réduire la taille des emojis */
+    margin-right: 8px; /* Espacement à droite de l'emoji */
+    vertical-align: middle; /* Aligne l'emoji avec le texte */
+  }
+

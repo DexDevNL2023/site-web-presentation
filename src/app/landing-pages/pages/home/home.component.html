@@ -18,7 +18,7 @@
             </header>
  
             <div class="row gy-4">
-                <div *ngFor="let service of servicesContent.services" class="col-lg-4 col-md-6 aos-init aos-animate align-items-center justify-content-center"
+                <div *ngFor="let service of servicesContent.services" class="col-lg-6 col-md-6 aos-init aos-animate align-items-center justify-content-center"
                     data-aos="fade-up" [attr.data-aos-delay]="service.delay">
                     <div class="service-box {{ service.color }}">
                         <div><img [src]="service.icon" alt="" class="service-icon"></div>

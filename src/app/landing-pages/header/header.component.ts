@@ -8,7 +8,7 @@ import { MainComponent } from '../main/main.component';
 export class HeaderComponent {
   headerContent = {
     color: '#3D72B4',
-    logoUrl: 'assets/img/logo.png',
+    logoUrl: 'assets/img/logo_van.png',
     menuItems: [
       { label: 'Accueil', link: '/', subMenu: [] },
       {
@@ -16,24 +16,20 @@ export class HeaderComponent {
         link: '/about',
         subMenu: [
           { id: 'who-we-are', label: 'Qui sommes-nous' },
-          { id: 'why-us', label: 'Pourquoi choisir IT-Consulting Teleo' }
+          { id: 'why-us', label: 'Pourquoi choisir ETS VAN’S SERVICES' }
         ]
       },
       {
         label: 'Ce Que Nous Faisons',
         link: '/service',
         subMenu: [
-          { id: 1, label: 'Cloud computing' },
-          { id: 2, label: 'Cybersécurité' },
-          { id: 3, label: 'Ingénierie Réseau' },
-          { id: 4, label: 'Formation' },
-          { id: 5, label: 'Développement Web' },
-          { id: 6, label: 'Développement d\'Applications' },
-          { id: 7, label: 'Intelligence Artificielle' }
+          { id: 1, label: 'Vente des pièces détachées et accessoires de véhicules' },
+          { id: 2, label: 'Vente des mèches brésilienne et indiennes' },
+          { id: 3, label: 'Ventes des matériaux d’électricité' },
+          { id: 4, label: 'Pressing' }
         ]
       },
-      { label: 'Carrières', link: '/career', subMenu: [] }/* ,
-      { label: 'Contacts', link: '/contact', subMenu: [] } */
+      { label: 'Carrières', link: '/career', subMenu: [] }
     ]
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] } = { label: 'Home', link: '/', subMenu: [] };
